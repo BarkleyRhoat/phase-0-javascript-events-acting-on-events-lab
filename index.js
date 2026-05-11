@@ -3,7 +3,6 @@ dodger.style.backgroundColor = "#ff69b4";
 dodger.style.bottom = "100px";
 dodger.style.left = "180px";
 
-
 function moveDodgerLeft() {
   const leftNumbers = dodger.style.left.replace("px", "");
   const left = parseInt(leftNumbers, 10);
@@ -24,10 +23,8 @@ function moveDodgerRight() {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
-      moveDodgerLeft();
-    } else if(e.key === "ArrowRight"); {
-        moveDodgerRight();
+    moveDodgerLeft();
+  } else if (e.key === "ArrowRight") {
+    moveDodgerRight();
   }
 });
-
-
